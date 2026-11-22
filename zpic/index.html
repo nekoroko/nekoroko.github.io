@@ -1,0 +1,98 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>ZPic — fast photo culling for Nikon RAW</title>
+<meta name="description" content="Cull Nikon NEF bursts before Lightroom. Shows the AF point and focus peaking. No AI, no subscription, one-time purchase.">
+<link rel="icon" href="favicon.png">
+<link rel="stylesheet" href="../style.css">
+</head>
+<body>
+<div class="wrap">
+<header class="top">
+  <a class="brand" href="./"><img src="icon.png" alt="">ZPic</a>
+  <a class="lang" href="ja/">日本語</a>
+</header>
+
+<div class="hero">
+  <img src="icon.png" alt="ZPic icon">
+  <h1>See where your Nikon focused.<br>Keep the sharp ones.</h1>
+  <p class="lead">ZPic is a small, fast culling app for Nikon NEF files. Flip through a 1,000-frame burst, see the AF point and focus peaking, mark keepers and rejects with one hand — then bring only the good ones into Lightroom.</p>
+  <div class="cta">
+    <!-- TODO: Gumroad product URL -->
+    <a class="btn primary" href="#buy">Buy — one-time purchase</a>
+    <!-- TODO: free trial download URL -->
+    <a class="btn" href="#trial">Download free trial</a>
+  </div>
+  <p class="note">Windows 11 · macOS (Apple Silicon / Intel) · No AI · No subscription · Works offline</p>
+</div>
+
+<!-- TODO: replace with <video src="demo.mp4" autoplay muted loop playsinline></video> -->
+<div class="demo">15-second demo video goes here</div>
+
+<section>
+  <h2>What it does</h2>
+  <div class="grid">
+    <div class="card"><h3>AF point overlay</h3><p>A thin box shows where the camera focused. Press <kbd>Space</kbd> to zoom to 100% right on it.</p></div>
+    <div class="card"><h3>Focus peaking</h3><p>Three styles (<kbd>Q</kbd>): colored edges, glowing edges on dark mono, or a tint over the in-focus area.</p></div>
+    <div class="card"><h3>Instant frame flipping</h3><p>Shows the embedded JPEG instantly, then swaps in a real RAW render in the background — same look, real detail.</p></div>
+    <div class="card"><h3>Zoomed flipping</h3><p>Stay at 100% and press <kbd>←</kbd> <kbd>→</kbd>: each frame opens centered on its own AF point. Ideal for bird bursts.</p></div>
+    <div class="card"><h3>One-hand keys</h3><p><kbd>Z</kbd> keep, <kbd>X</kbd> reject, <kbd>1</kbd>–<kbd>5</kbd> stars, <kbd>Ctrl/⌘+Z</kbd> undo. Fewer than ten keys to learn.</p></div>
+    <div class="card"><h3>Safe hand-off</h3><p>Move rejects to a <code>_rejected</code> folder (RAW+JPEG pairs and .xmp move together). ZPic never deletes your files.</p></div>
+  </div>
+</section>
+
+<section>
+  <h2>Supported cameras</h2>
+  <table>
+    <tr><th>Camera</th><th>Status</th></tr>
+    <tr><td>Nikon Z5II</td><td><span class="ok">Tested</span> — RAW view, peaking, AF point</td></tr>
+    <tr><td>Other Nikon Z bodies</td><td>Likely to work. Please check with the free trial before buying.</td></tr>
+    <tr><td>Other brands (CR3, ARW, RAF…)</td><td>Not supported</td></tr>
+  </table>
+  <p>Nikon camera not on the list? Send me a few sample NEF files and I'll try to add support in a free update. Samples are used only for testing and deleted afterward.</p>
+</section>
+
+<section>
+  <h2>Good to know</h2>
+  <ul class="plain">
+    <li><b>High Efficiency RAW (HE / HE★)</b> can't be decoded, so ZPic shows the embedded JPEG instead (marked “JPEG view”). Lossless compressed NEF is fully supported.</li>
+    <li>JPEG-only frames work, but have no AF point.</li>
+    <li>Keep/reject marks and stars are saved in a small <code>.zpic.json</code> file in the folder. Your photos are not modified.</li>
+    <li>ZPic doesn't connect to the internet and never sends your photos anywhere.</li>
+    <li>Free updates for all 1.x versions.</li>
+    <li>If it doesn't run on your computer, contact me for a refund.</li>
+  </ul>
+</section>
+
+<section id="first-launch">
+  <h2>Opening it the first time</h2>
+  <p>ZPic is made by a solo developer and isn't registered with Apple or Microsoft, so your computer shows a warning the first time. You only do this once.</p>
+  <details>
+    <summary>macOS 15 Sequoia / 26 Tahoe</summary>
+    <ol>
+      <li>Unzip and drag <b>ZPic</b> into <b>Applications</b>.</li>
+      <li>Double-click ZPic. When it says ZPic was not opened, click <b>Done</b> (not “Move to Trash”).</li>
+      <li>Open <b>System Settings › Privacy &amp; Security</b>, scroll to <b>Security</b> and click <b>Open Anyway</b> next to ZPic (available for about an hour).</li>
+      <li>Enter your login password. From now on it opens normally.</li>
+    </ol>
+    <p class="note">Download the right version: Apple Silicon (M1 or later) or Intel.</p>
+  </details>
+  <details>
+    <summary>Windows 10 / 11</summary>
+    <ol>
+      <li>Right-click the ZIP › <b>Extract All</b>. Keep the whole ZPic folder together.</li>
+      <li>Double-click <b>ZPic.exe</b>. On “Windows protected your PC”, click <b>More info</b> › <b>Run anyway</b>.</li>
+    </ol>
+    <p class="note">If Smart App Control blocks it with no “Run anyway” button, ZPic can't run on that PC — ask me for a refund.</p>
+  </details>
+</section>
+
+<footer>
+  <!-- TODO: developer name and support email -->
+  ZPic · Made by a solo developer · Contact: <a href="mailto:support@example.com">support@example.com</a>
+</footer>
+</div>
+</body>
+</html>
