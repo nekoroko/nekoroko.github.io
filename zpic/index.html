@@ -20,15 +20,24 @@
   <h1>See where your Nikon focused.<br>Keep the sharp ones.</h1>
   <p class="lead">ZPic is a small, fast culling app for Nikon NEF files. Flip through a 1,000-frame burst, see the AF point and focus peaking, mark keepers and rejects with one hand — then bring only the good ones into Lightroom.</p>
   <div class="cta">
-    <!-- TODO: Gumroad product URL -->
-    <a class="btn primary" href="#buy">Buy — one-time purchase</a>
-    <!-- TODO: free trial download URL -->
-    <a class="btn" href="#trial">Download free trial</a>
+    <a class="btn primary" href="#download">Download free trial</a>
+    <a class="btn" href="https://takaishi33.gumroad.com/l/zpic">Buy a license key — $19</a>
   </div>
-  <p class="note">Windows 11 · macOS (Apple Silicon / Intel) · No AI · No subscription · Works offline</p>
+  <p class="note">Windows 11 · macOS (Apple Silicon / Intel) · No AI · No subscription · 14-day free trial</p>
 </div>
 
 <div class="demo"><video src="demo.mp4" poster="poster.png" controls muted loop playsinline preload="metadata"></video></div>
+
+<section id="download">
+  <h2>Download</h2>
+  <p>Free for 14 days with every feature. The same download becomes the full version when you enter a license key.</p>
+  <div class="cta" style="justify-content:flex-start;margin-top:12px">
+    <a class="btn" href="https://github.com/nekoroko/nekoroko.github.io/releases/latest/download/ZPic-windows.zip">Windows 11</a>
+    <a class="btn" href="https://github.com/nekoroko/nekoroko.github.io/releases/latest/download/ZPic-macos-apple-silicon.zip">Mac — Apple Silicon (M1 or later)</a>
+    <a class="btn" href="https://github.com/nekoroko/nekoroko.github.io/releases/latest/download/ZPic-macos-intel.zip">Mac — Intel</a>
+  </div>
+  <p class="note">Your computer shows a warning the first time you open it. See <a href="#first-launch">Opening it the first time</a>.</p>
+</section>
 
 <section>
   <h2>What it does</h2>
@@ -39,6 +48,7 @@
     <div class="card"><h3>Zoomed flipping</h3><p>Stay at 100% and press <kbd>←</kbd> <kbd>→</kbd>: each frame opens centered on its own AF point. Ideal for bird bursts.</p></div>
     <div class="card"><h3>One-hand keys</h3><p><kbd>Z</kbd> keep, <kbd>X</kbd> reject, <kbd>1</kbd>–<kbd>5</kbd> stars, <kbd>Ctrl/⌘+Z</kbd> undo. Fewer than ten keys to learn.</p></div>
     <div class="card"><h3>Safe hand-off</h3><p>Move rejects to a <code>_rejected</code> folder (RAW+JPEG pairs and .xmp move together). ZPic never deletes your files.</p></div>
+    <div class="card"><h3>Lightroom hand-off</h3><p>Star ratings are saved as you rate, in a form Lightroom reads on import: an XMP sidecar for NEF, the rating field inside the file for JPEG. Color labels are left alone.</p></div>
   </div>
 </section>
 
@@ -58,8 +68,9 @@
   <ul class="plain">
     <li><b>High Efficiency RAW (HE / HE★)</b> can't be decoded, so ZPic shows the embedded JPEG instead (marked “JPEG view”). Lossless compressed NEF is fully supported.</li>
     <li>JPEG-only frames work, but have no AF point.</li>
-    <li>Keep/reject marks and stars are saved in a small <code>.zpic.json</code> file in the folder. Your photos are not modified.</li>
-    <li>ZPic doesn't connect to the internet and never sends your photos anywhere.</li>
+    <li>Keep/reject marks are saved in a small <code>.zpic.json</code> file in the folder. Your NEF files are never modified. For JPEGs, only the star rating field is written; the image itself is untouched. Sidecars written by other apps are never touched.</li>
+    <li>ZPic never sends your photos anywhere. It goes online only once, to check your license key.</li>
+    <li>The free trial runs for 14 days with every feature. A license key removes the time limit, and one key works for up to 5 activations.</li>
     <li>The app's on-screen labels are currently in Japanese. There are only a few (shown in the demo), and everything is driven by the keys above.</li>
     <li>Free updates for all 1.x versions.</li>
     <li>If it doesn't run on your computer, contact me for a refund.</li>

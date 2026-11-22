@@ -20,15 +20,24 @@
   <h1>ピントの位置が、<br>すぐ分かる。</h1>
   <p class="lead">ZPic は、ニコンの NEF を Lightroom に取り込む前に○×で振り分けるだけの小さなアプリです。1,000枚を超える連写でも一瞬で送れて、AF枠とピーキングでピントの合ったコマだけを片手で残せます。</p>
   <div class="cta">
-    <!-- TODO: BOOTH の商品URL -->
-    <a class="btn primary" href="#buy">BOOTH で購入（買い切り）</a>
-    <!-- TODO: 試用版のURL -->
-    <a class="btn" href="#trial">無料の試用版</a>
+    <a class="btn primary" href="#download">無料の試用版をダウンロード</a>
+    <a class="btn" href="https://takaishi33.gumroad.com/l/zpic">ライセンスキーを購入（$19・買い切り）</a>
   </div>
-  <p class="note">Windows 11 ・ macOS（Appleシリコン／Intel）・ AIなし ・ 定額なし ・ オフラインで動作</p>
+  <p class="note">Windows 11 ・ macOS（Appleシリコン／Intel）・ AIなし ・ 定額なし ・ 14日間の無料試用</p>
 </div>
 
 <div class="demo"><video src="demo.mp4" poster="../poster.png" controls muted loop playsinline preload="metadata"></video></div>
+
+<section id="download">
+  <h2>ダウンロード</h2>
+  <p>14日間、すべての機能を無料で試せます。ライセンスキーを入れると、同じアプリがそのまま製品版になります。</p>
+  <div class="cta" style="justify-content:flex-start;margin-top:12px">
+    <a class="btn" href="https://github.com/nekoroko/nekoroko.github.io/releases/latest/download/ZPic-windows.zip">Windows 11</a>
+    <a class="btn" href="https://github.com/nekoroko/nekoroko.github.io/releases/latest/download/ZPic-macos-apple-silicon.zip">Mac（Appleシリコン・M1以降）</a>
+    <a class="btn" href="https://github.com/nekoroko/nekoroko.github.io/releases/latest/download/ZPic-macos-intel.zip">Mac（Intel）</a>
+  </div>
+  <p class="note">初回だけ OS の警告が出ます。<a href="#first-launch">はじめて開くとき</a>をご覧ください。</p>
+</section>
 
 <section>
   <h2>できること</h2>
@@ -39,6 +48,7 @@
     <div class="card"><h3>拡大したまま送る</h3><p>等倍のまま <kbd>←</kbd> <kbd>→</kbd> で送ると、各コマのAF枠が中央に来ます。野鳥の連写に。</p></div>
     <div class="card"><h3>片手で足りるキー</h3><p><kbd>Z</kbd> 採用、<kbd>X</kbd> 不採用、<kbd>1</kbd>〜<kbd>5</kbd> 星、<kbd>Ctrl/⌘+Z</kbd> 取り消し。覚えるのは10個以内。</p></div>
     <div class="card"><h3>安全な受け渡し</h3><p>不採用のコマを <code>_rejected</code> フォルダへ移動（RAW+JPEGと .xmp も一緒）。ZPic は削除をしません。</p></div>
+    <div class="card"><h3>Lightroom へ星を渡す</h3><p>星は付けるたびに保存され、Lightroom が取り込み時にレーティングとして読みます。NEF は隣の .xmp、JPEG はファイル内の星の欄です。色ラベルは付けません。</p></div>
   </div>
 </section>
 
@@ -58,8 +68,9 @@
   <ul class="plain">
     <li><b>高効率RAW（HE／HE★）</b>は展開できないため、埋め込みJPEGで表示します（画面に「JPEG表示」と出ます）。ロスレス圧縮の NEF は RAW から表示します。</li>
     <li>JPEGだけのコマも開けますが、AF枠は出ません。</li>
-    <li>○×と星は、フォルダ内の小さな <code>.zpic.json</code> にだけ保存します。写真ファイルは書き換えません。</li>
-    <li>インターネットにはつながず、写真を外部に送りません。</li>
+    <li>○×は、フォルダ内の小さな <code>.zpic.json</code> に保存します。NEF は書き換えません。JPEG は星の欄だけを書き、画像には触りません。他のソフトが作った .xmp にも触りません。</li>
+    <li>写真を外部に送ることはありません。インターネットにつなぐのは、ライセンスキーを確認する1回だけです。</li>
+    <li>試用版は14日間、すべての機能が使えます。ライセンスキーを入れると期限がなくなります。1つのキーで5回まで認証できます。</li>
     <li>1.x の間のアップデートは無料です。</li>
     <li>お使いのPCで動かなかった場合はご連絡ください。返金します。</li>
   </ul>
